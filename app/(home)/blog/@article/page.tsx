@@ -2,6 +2,8 @@ import delay from '@/lib/delay'
 import { usePosts } from '@/hooks/use-posts'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 export default async function page() {
   await delay(2000) // Reduced delay for better UX
   const data = await usePosts()
